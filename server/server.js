@@ -11,7 +11,7 @@ const {errorMiddleware} = require("./middlewares/error-middleware");
 
 // handling cors policy
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: "https://mern-app-client-ralb.onrender.com",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 };

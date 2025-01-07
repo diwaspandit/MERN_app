@@ -11,8 +11,6 @@ router.route('/users/update/:id').patch(authMiddleware, adminMiddleware, adminCo
 
 router.route('/contacts').get(authMiddleware, adminMiddleware, adminController.getAllContacts);
 router.route('/contacts/delete/:id').delete(authMiddleware, adminMiddleware, adminController.deleteContactById);
-// router.route('/contacts/:id').get(authMiddleware, adminMiddleware, adminController.getContactById);
-// router.route('/contacts/update/:id').patch(authMiddleware, adminMiddleware, adminController.updateContactById);
 
 module.exports = router;
 
