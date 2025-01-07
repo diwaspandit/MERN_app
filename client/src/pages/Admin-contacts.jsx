@@ -2,18 +2,16 @@ import { useEffect, useState } from "react";
 import {useAuth} from "../store/auth";
 import {toast} from "react-toastify";
 
-const USERS_URL = "http://localhost:3000/api/admin/contacts";
-
 
 const AdminContacts = ()=>{
 
     const [contactData, setContactData] = useState([]);
 
-    const {authorizationToken} = useAuth();
+    const {authorizationToken, API} = useAuth();
 
     const getAllContactsData = async()=>{
         try{
-            const response = await fetch(USERS_URL, {
+            const response = await fetch(`${API}/api/admin/contacts`, {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -33,7 +31,7 @@ const AdminContacts = ()=>{
     //delete contact function
     const deleteContactById = async(id) =>{
         try{
-            const DELETE_USER_URL = `http://localhost:3000/api/admin/contacts/delete/${id}`;
+            const DELETE_USER_URL = `${API}/api/admin/contacts/delete/${id}`;
             const response = await fetch(DELETE_USER_URL, {
                 method: "DELETE",
                 headers: {

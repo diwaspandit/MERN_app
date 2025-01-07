@@ -12,12 +12,12 @@ const AdminUpdate = () => {
     });
 
     const params = useParams();
-    const {authorizationToken} = useAuth();
+    const {authorizationToken, API} = useAuth();
 
     //get single user data
     const getSingleUserData = async() =>{
         try{
-            const SINGLE_USER_URL = `http://localhost:3000/api/admin/users/${params.id}`;
+            const SINGLE_USER_URL = `${API}/api/admin/users/${params.id}`;
             const response = await fetch(SINGLE_USER_URL, {
                 method: "GET",
                 headers: {
@@ -45,7 +45,7 @@ const AdminUpdate = () => {
     const handleSubmit = async (e) =>{
         e.preventDefault();
         try{
-            const response = await fetch(`http://localhost:3000/api/admin/users/update/${params.id}`, {
+            const response = await fetch(`${API}/api/admin/users/update/${params.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",

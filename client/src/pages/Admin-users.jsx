@@ -2,18 +2,16 @@ import { useEffect, useState } from "react";
 import {useAuth} from "../store/auth";
 import {Link} from "react-router-dom";
 
-const USERS_URL = "http://localhost:3000/api/admin/users";
-
 
 const AdminUsers = ()=>{
 
     const [users, setUsers] = useState([]);
 
-    const {authorizationToken} = useAuth();
+    const {authorizationToken, API} = useAuth();
 
     const getAllUsersData = async()=>{
         try{
-            const response = await fetch(USERS_URL, {
+            const response = await fetch(`${API}/api/admin/users`, {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -31,7 +29,7 @@ const AdminUsers = ()=>{
     //delete user function
     const deleteUser = async(id) =>{
         try{
-            const DELETE_USER_URL = `http://localhost:3000/api/admin/users/delete/${id}`;
+            const DELETE_USER_URL = `${API}/api/admin/users/delete/${id}`;
             const response = await fetch(DELETE_USER_URL, {
                 method: "DELETE",
                 headers: {

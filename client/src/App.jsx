@@ -1,3 +1,4 @@
+
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -14,7 +15,7 @@ import AdminLayout from "./components/layouts/Admin-layout";
 import AdminUsers from "./pages/Admin-users";
 import AdminContacts from "./pages/Admin-contacts";
 import AdminUpdate from "./pages/Admin-update";
-import "./App.css";
+
 
 const App =() => {
   return (
