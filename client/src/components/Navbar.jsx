@@ -11,7 +11,7 @@ const Navbar = () => {
             <header>
                 <div className="container">
                     <div className="logo-brand">
-                        <Link to="/">Diwas Pandit</Link>
+                        <Link to="/">Tech DD Twins</Link>
                     </div>
                     <div className="menu-items">
                         <ul>

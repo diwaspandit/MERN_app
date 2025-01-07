@@ -2,6 +2,7 @@ import {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth.jsx";
 import { toast } from 'react-toastify';
+import loginImage from "../images/login.png";
 
 const Login = () => {
     const [user, setUser]= useState({
@@ -58,7 +59,7 @@ const Login = () => {
                         <div className="container grid grid-two-cols">
                             <div className="login-image">
                                 <img 
-                                    src="/images/login.png"
+                                    src={loginImage}
                                     alt="image showing login"
                                     width="400"
                                     height="500"

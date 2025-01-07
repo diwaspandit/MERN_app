@@ -1,6 +1,7 @@
 import {useState} from "react";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
+import contactImage from "../images/contact.png";
 
 const defaultContact = {
     username: "",
@@ -59,7 +60,7 @@ const Contact = () => {
                 {/* contact page main content */}
                 <div className="container grid grid-two-cols">
                     <div className="contact-image">
-                        <img src="/images/contact.png" alt="contact us" width="400" height="500"/>
+                        <img src={contactImage} alt="contact us" width="400" height="500"/>
                     </div>
 
                     {/* contact form core*/}

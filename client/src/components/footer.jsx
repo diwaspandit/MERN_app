@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="logo-brand">
                         <Link to="/">Diwas Pandit</Link>
                     </div>
-                    <p>Your trusted partner in web development.</p>
+                    <p>Your trusted partner in Learning and Development</p>
                 </div>
 
                 <div className="footer-section">
@@ -37,9 +37,9 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>CONTACT INFO</h3>
                     <ul>
-                        <li>Phone: +977 9812345678</li>
-                        <li>Email: info@diwaspandit.com</li>
-                        <li>Address: Kathmandu, Nepal</li>
+                        <li>Phone: +1 512-----</li>
+                        <li>Email: info@techddtwins.com</li>
+                        <li>Address: Austin, USA</li>
                     </ul>
                 </div>
             </div>

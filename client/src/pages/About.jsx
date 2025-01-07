@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import aboutImage from "../images/about.png";
 
 const About = () => {
     const {user} = useAuth();
@@ -24,7 +25,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className="hero-image">
-                            <img src="images/hero.png" alt="hero image" width="400" height="500"/>
+                            <img src={aboutImage} alt="hero image" width="400" height="500"/>
 
                         </div>
                     </div>

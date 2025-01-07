@@ -2,6 +2,7 @@ import {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth.jsx";
 import { toast } from "react-toastify";
+import registerImage from "../images/register.png";
 
 const Register = () => {
     const [user, setUser]= useState({
@@ -64,7 +65,7 @@ const Register = () => {
                         <div className="container grid grid-two-cols">
                             <div className="registration-image">
                                 <img 
-                                    src="/images/register.png" 
+                                    src={registerImage}
                                     alt="image showing registration"
                                     width="400"
                                     height="500"

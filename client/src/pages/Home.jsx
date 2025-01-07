@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import homeImage from "../images/home.png";
+import hero2Image from "../images/services.png";
+
 
 const Home = () => {
     return (
@@ -8,9 +11,9 @@ const Home = () => {
                 <section className="section-hero">
                     <div className="container grid grid-two-cols">
                         <div className="hero-content">
-                            <p>We are the World Best IT Company</p>
-                            <h1>Welcome to Diwas Pandit</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                            <p>Hi,</p>
+                            <h1>Welcome to Tech DD Twins!</h1>
+                            <p>We are a technology-driven company dedicated to empowering individuals through skill-building courses and providing top-tier software development solutions.</p>
                             <div className="btn btn-group">
                                 <Link to="/contact">
                                     <button className="btn">Connect Now </button>
@@ -23,7 +26,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="hero-image">
-                            <img src="images/hero.png" alt="hero image" width="400" height="500"/>
+                            <img src={homeImage} alt="hero image" width="400" height="500"/>
 
                         </div>
                     </div>
@@ -37,15 +40,15 @@ const Home = () => {
                 <div className="container grid grid-four-cols">
                     <div className="div1">
                         <h2>50+</h2>
-                        <p>registered companies</p>
+                        <p>Successful Courses Offered</p>
                     </div>
                     <div className="div1">
-                        <h2>100,00+</h2>
-                        <p>Happy Clients</p>
+                        <h2>100,000+</h2>
+                        <p>Students Empowered</p>
                     </div>
                     <div className="div1">
                         <h2>500+</h2>
-                        <p>Well Experienced Team</p>
+                        <p>Custom Software Solutions Delivered</p>
                     </div>
                     <div className="div1">
                         <h2>24/7</h2>
@@ -59,12 +62,12 @@ const Home = () => {
             <section className="section-hero">
                     <div className="container grid grid-two-cols">
                         <div className="hero-image">
-                            <img src="images/design.png" alt="coding together" width="400" height="500"/>
+                            <img src={hero2Image} alt="coding together" width="400" height="500"/>
                         </div>
                         <div className="hero-content">
-                            <p>We are ready to help you</p>
-                            <h1>Get Started Today</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                            <p>Your journey to success begins here</p>
+                            <h1>Join Tech DD Twins Today</h1>
+                            <p>Learn new skills, collaborate on innovative projects, and unlock your full potential with our expert-led courses and tailored software development solutions.</p>
                             <div className="btn btn-group">
                                 <Link to="/contact">
                                     <button className="btn">Connect Now </button>
